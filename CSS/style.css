@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+*
+{
+    outline: none !important;
+}
+body{
+    font-family:  'Poppins', sans-serif;
+}
+header{
+    position: relative;
+    z-index: 1000000;
+}
+p{
+    font-size: 1.15 rem;
+}
+.navbar{
+    background: transparent !important;
+    transition: 0.5s;
+}
+.navbar .scrolled{
+    background: #000 !important;
+    transition: 0.5s;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+    background: #fff;
+}

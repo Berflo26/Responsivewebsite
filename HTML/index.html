@@ -21,7 +21,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">Logo</a>
           <button
@@ -344,6 +344,11 @@
       integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript">
+      $(document).scroll(function(){
+        $('.navbar').toggleClass('scrolled', $(this).scrollTop()> $('.navbar').height());
+      })
+    </script>
     <br />
   </body>
 </html>
